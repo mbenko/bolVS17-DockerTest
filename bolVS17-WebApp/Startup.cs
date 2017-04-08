@@ -20,6 +20,8 @@ namespace bolVS17_WebApp
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            MySettings.API_URL = Configuration["apiURL"];
         }
 
         public IConfigurationRoot Configuration { get; }
