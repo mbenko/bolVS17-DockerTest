@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  bolvs17-webapp:
+    image: bolvs17-webapp
+    build:
+      context: 'E:\Demos\bolvs2017\GitHub\bolVS17-DockerTest\bolVS17-WebApp'
+      dockerfile: Dockerfile
+      
+  bolvs17-webapi:
+    image: bolvs17-webapi
+    build:
+      context: 'E:\Demos\bolvs2017\GitHub\bolVS17-DockerTest\bolVS17-WebAPI'
+      dockerfile: Dockerfile
