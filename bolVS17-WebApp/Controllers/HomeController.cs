@@ -27,6 +27,7 @@ namespace bolVS17_WebApp.Controllers
             ViewData["Message"] = $"Called the WebAPI and got {json.Result} as a result";
             return View();
 
+
         }
 
         public IActionResult Contact()
